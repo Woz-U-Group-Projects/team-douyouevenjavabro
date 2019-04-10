@@ -21,11 +21,11 @@
 
 	<dependencies>
 	<!-- MongoDB -->
-		<!-- <dependency>
+<!-- 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongo-java-driver</artifactId>
-			<version>2.10.1</version>$NO-MVN-MAN-VER$
-		</dependency> -->
+			<version>2.10.1</version>
+		</dependency> --> 
 		<!-- MongoDB -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
