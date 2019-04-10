@@ -408,3 +408,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 22:10:40.761
 !MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.core.jobs 2 2 2019-04-09 22:16:25.876
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.ls.eclipse.commons.STS4LanguageServerProcessStreamConnector$1
