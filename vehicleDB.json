@@ -27,6 +27,146 @@
             "model": "Pilot",
             "releaseYear": 2010,
             "miles": []
+        },
+        {
+            "id": 4,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2011,
+            "miles": []
+        },
+        {
+            "id": 5,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2011,
+            "miles": []
+        },
+        {
+            "id": 6,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2011,
+            "miles": []
+        },
+        {
+            "id": 7,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2011,
+            "miles": []
+        },
+        {
+            "id": 8,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2012,
+            "miles": []
+        },
+        {
+            "id": 9,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2012,
+            "miles": []
+        },
+        {
+            "id": 10,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2012,
+            "miles": []
+        },
+        {
+            "id": 11,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2012,
+            "miles": []
+        },
+        {
+            "id": 12,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2013,
+            "miles": []
+        },
+        {
+            "id": 13,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2013,
+            "miles": []
+        },
+        {
+            "id": 14,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2013,
+            "miles": []
+        },
+        {
+            "id": 15,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2013,
+            "miles": []
+        },
+        {
+            "id": 16,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2014,
+            "miles": []
+        },
+        {
+            "id": 17,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2014,
+            "miles": []
+        },
+        {
+            "id": 18,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2014,
+            "miles": []
+        },
+        {
+            "id": 19,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2014,
+            "miles": []
+        },
+        {
+            "id": 20,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2015,
+            "miles": []
+        },
+        {
+            "id": 21,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2015,
+            "miles": []
+        },
+        {
+            "id": 22,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2015,
+            "miles": []
+        },
+        {
+            "id": 23,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2015,
+            "miles": []
         }
     ],
     "usersDB": [
