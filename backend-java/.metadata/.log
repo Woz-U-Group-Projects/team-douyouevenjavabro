@@ -141,3 +141,119 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:36:29.837
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IXCTJAGR => OK
+!SESSION 2019-04-09 21:41:07.475 -----------------------------------------------
+eclipse.buildId=4.1.0.201812201400-RELEASE
+java.version=11.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2019-04-09 21:41:39.139
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-04-09 21:41:39.139
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@374ba492,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@581d5b33,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-09 21:41:42.619
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nikos'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:51.391
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:51.393
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@4b05a9b1[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=531)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:51.395
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:51.431
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.498
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IrOeKawU
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.499
+!MESSAGE subscribing to classpath changes: sts4.classpath.IrOeKawU
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.500
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.502
+!MESSAGE subsribers = [sts4.classpath.IrOeKawU]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.502
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.505
+!MESSAGE project carwell ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.506
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.506
+!MESSAGE Preparing classpath changed notification carwell
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.507
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IrOeKawU => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.507
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.518
+!MESSAGE classpath=70 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.519
+!MESSAGE executing callback sts4.classpath.IrOeKawU carwell false 70
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:41:55.960
+!MESSAGE executing callback sts4.classpath.IrOeKawU SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:07.928
+!MESSAGE Preparing classpath changed notification carwell
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:07.929
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:07.935
+!MESSAGE classpath=71 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:07.936
+!MESSAGE executing callback sts4.classpath.IrOeKawU carwell false 71
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:07.954
+!MESSAGE executing callback sts4.classpath.IrOeKawU SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:57.662
+!MESSAGE Preparing classpath changed notification carwell
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:57.663
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:57.670
+!MESSAGE classpath=70 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:57.671
+!MESSAGE executing callback sts4.classpath.IrOeKawU carwell false 70
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-04-09 21:44:57.682
+!MESSAGE executing callback sts4.classpath.IrOeKawU SUCCESS [done]
