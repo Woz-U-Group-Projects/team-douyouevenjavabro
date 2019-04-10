@@ -1,0 +1,427 @@
+{
+    "vehiclesDB": [
+        {
+            "id": 0,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2010,
+            "miles": []
+        },
+        {
+            "id": 1,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2010,
+            "miles": []
+        },
+        {
+            "id": 2,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2010,
+            "miles": []
+        },
+        {
+            "id": 3,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2010,
+            "miles": []
+        },
+        {
+            "id": 4,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2011,
+            "miles": []
+        },
+        {
+            "id": 5,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2011,
+            "miles": []
+        },
+        {
+            "id": 6,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2011,
+            "miles": []
+        },
+        {
+            "id": 7,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2011,
+            "miles": []
+        },
+        {
+            "id": 8,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2012,
+            "miles": []
+        },
+        {
+            "id": 9,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2012,
+            "miles": []
+        },
+        {
+            "id": 10,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2012,
+            "miles": []
+        },
+        {
+            "id": 11,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2012,
+            "miles": []
+        },
+        {
+            "id": 12,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2013,
+            "miles": []
+        },
+        {
+            "id": 13,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2013,
+            "miles": []
+        },
+        {
+            "id": 14,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2013,
+            "miles": []
+        },
+        {
+            "id": 15,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2013,
+            "miles": []
+        },
+        {
+            "id": 16,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2014,
+            "miles": []
+        },
+        {
+            "id": 17,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2014,
+            "miles": []
+        },
+        {
+            "id": 18,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2014,
+            "miles": []
+        },
+        {
+            "id": 19,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2014,
+            "miles": []
+        },
+        {
+            "id": 20,
+            "make": "Honda",
+            "model": "Accord",
+            "releaseYear": 2015,
+            "miles": []
+        },
+        {
+            "id": 21,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2015,
+            "miles": []
+        },
+        {
+            "id": 22,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2015,
+            "miles": []
+        },
+        {
+            "id": 23,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2015,
+            "miles": []
+        }
+    ],
+    "usersDB": [
+        {
+            "id": 0,
+            "firstName": "admin",
+            "lastName": "admin",
+            "role": "admin"
+        }
+    ],
+    "miles": [
+        {
+            "7500": [
+                "Replace engine oil!",
+                "Rotate tires!"
+            ]
+        },
+        {
+            "15000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!"
+            ]
+        },
+        {
+            "22500": [
+                "Replace engine oil!",
+                "Rotate Tires!"
+            ]
+        },
+        {
+            "30000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!",
+                "RepIace air cleaner element!",
+                "Replace spark plugs!",
+                "Inspect and adjust drive belts!"
+            ]
+        },
+        {
+            "37500": [
+                "Replace engine oil!",
+                "Rotate tires!"
+            ]
+        },
+        {
+            "45000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!"
+            ]
+        },
+        {
+            "52500": [
+                "Replace engine oil!",
+                "Rotate Tires!"
+            ]
+        },
+        {
+            "60000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!",
+                "RepIace air cleaner element!",
+                "Replace spark plugs!",
+                "Inspect and adjust drive belts!"
+            ]
+        },
+        {
+            "67500": [
+                "Replace engine oil!",
+                "Rotate tires!"
+            ]
+        },
+        {
+            "75000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!"
+            ]
+        },
+        {
+            "82500": [
+                "Replace engine oil!",
+                "Rotate Tires!"
+            ]
+        },
+        {
+            "90000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!",
+                "RepIace air cleaner element!",
+                "Replace spark plugs!",
+                "Inspect and adjust drive belts!"
+            ]
+        },
+        {
+            "97500": [
+                "Replace engine oil!",
+                "Rotate tires!"
+            ]
+        },
+        {
+            "105000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!"
+            ]
+        },
+        {
+            "112500": [
+                "Replace engine oil!",
+                "Rotate Tires!"
+            ]
+        },
+        {
+            "120000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!",
+                "RepIace air cleaner element!",
+                "Replace spark plugs!",
+                "Inspect and adjust drive belts!"
+            ]
+        },
+        {
+            "127500": [
+                "Replace engine oil!",
+                "Rotate tires!"
+            ]
+        },
+        {
+            "135000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!"
+            ]
+        },
+        {
+            "142500": [
+                "Replace engine oil!",
+                "Rotate Tires!"
+            ]
+        },
+        {
+            "150000": [
+                "Replace engine oil!",
+                "Rotate Tires!",
+                "Replace engine oil filter!",
+                "Inspect front and rear brakes!",
+                "Check parking brake adjustment!",
+                "Inspect tie rod ends, steering gearbox and boots!",
+                "Inspect suspension components!",
+                "Inspect driveshaft boots!",
+                "Inspect brake hoses and lines!",
+                "Check all fluid levels, condition of fluids, and check for leaks!",
+                "Inspect cooling system hoses and connections!",
+                "Inspect exhaust system!",
+                "Inspect fuel lines and connections!",
+                "RepIace air cleaner element!",
+                "Replace spark plugs!",
+                "Inspect and adjust drive belts!"
+            ]
+        }
+    ]
+}
