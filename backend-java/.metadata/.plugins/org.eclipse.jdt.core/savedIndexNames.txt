@@ -36,7 +36,6 @@ INDEX VERSION 1.131+D:\Dev\Group Project\Repo\team-douyouevenjavabro\backend-jav
 621778330.index
 1488743134.index
 1198006535.index
-2158312854.index
 2880695894.index
 3385093517.index
 1544522874.index
@@ -56,7 +55,6 @@ INDEX VERSION 1.131+D:\Dev\Group Project\Repo\team-douyouevenjavabro\backend-jav
 2549606885.index
 3265942386.index
 2616638235.index
-2834798846.index
 4202086562.index
 2290422138.index
 1728300301.index
