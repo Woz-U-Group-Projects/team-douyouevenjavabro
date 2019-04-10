@@ -6,6 +6,27 @@
             "model": "Accord",
             "releaseYear": 2010,
             "miles": []
+        },
+        {
+            "id": 1,
+            "make": "Honda",
+            "model": "Civic",
+            "releaseYear": 2010,
+            "miles": []
+        },
+        {
+            "id": 2,
+            "make": "Honda",
+            "model": "Odyssey",
+            "releaseYear": 2010,
+            "miles": []
+        },
+        {
+            "id": 3,
+            "make": "Honda",
+            "model": "Pilot",
+            "releaseYear": 2010,
+            "miles": []
         }
     ],
     "usersDB": [
