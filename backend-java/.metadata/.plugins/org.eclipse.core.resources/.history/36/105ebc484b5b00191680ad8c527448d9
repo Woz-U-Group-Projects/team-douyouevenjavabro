@@ -1,0 +1,3 @@
+
+spring.data.mongodb.host=ds133556.mlab.com
+spring.data.mongodb.port=33556
