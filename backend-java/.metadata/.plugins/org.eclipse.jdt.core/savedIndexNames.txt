@@ -21,7 +21,6 @@ INDEX VERSION 1.131+D:\Dev\Group Project\Repo\team-douyouevenjavabro\backend-jav
 291148299.index
 2414373419.index
 1454612076.index
-2834798846.index
 1488743134.index
 4139387143.index
 1556225874.index

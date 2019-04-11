@@ -1,0 +1,5 @@
+package com.jcg.java.mongodb.auth;
+
+public class Repository {
+
+}
