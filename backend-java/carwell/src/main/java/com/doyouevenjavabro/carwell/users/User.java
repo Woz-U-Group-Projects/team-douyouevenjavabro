@@ -15,6 +15,7 @@ public class User {
 	private Integer u_ID;
 	private String firstName;
 	private String lastName;
+	private String username;
 	private String role = "user";
 
 //	Getters and Setters
@@ -48,6 +49,14 @@ public class User {
 
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 }
