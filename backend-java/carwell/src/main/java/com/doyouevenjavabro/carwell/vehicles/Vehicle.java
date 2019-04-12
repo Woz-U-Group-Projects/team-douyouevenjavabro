@@ -1,23 +1,43 @@
 package com.doyouevenjavabro.carwell.vehicles;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
+
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Entity
-@Table(name = "vehicles")
+//@Table(name = "vehicles")
+@Document(collection="vehicles")
 public class Vehicle {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer v_ID;
+	
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@Column(name = "v_id")
+	private Integer vehicleId;
 	private String make;
 	private String model;
-	private Integer year;
+	private Integer releaseYear;
 	private Integer milesPerDay;
+	@Id
+	private ObjectId id;
 
-//	Getters and Setters
+public Integer getReleaseYear() {
+		return releaseYear;
+	}
+
+	public void setReleaseYear(Integer releaseYear) {
+		this.releaseYear = releaseYear;
+	}
+
+	public String getId() {
+		return id.toHexString();
+	}
+
+	public void setId(ObjectId id) {
+		this.id = id;
+	}
+
+	//	Getters and Setters
 	public Integer getMilesPerDay() {
 		return milesPerDay;
 	}
@@ -26,12 +46,12 @@ public class Vehicle {
 		this.milesPerDay = milesPerDay;
 	}
 
-	public Integer getV_ID() {
-		return v_ID;
+	public Integer getVehicleId() {
+		return vehicleId;
 	}
 
-	public void setV_ID(Integer v_ID) {
-		this.v_ID = v_ID;
+	public void setVehicleId(Integer vID) {
+		this.vehicleId = vID;
 	}
 
 	public String getMake() {
@@ -51,11 +71,11 @@ public class Vehicle {
 	}
 
 	public Integer getYear() {
-		return year;
+		return releaseYear;
 	}
 
 	public void setYear(Integer year) {
-		this.year = year;
+		this.releaseYear = year;
 	}
 
 }
