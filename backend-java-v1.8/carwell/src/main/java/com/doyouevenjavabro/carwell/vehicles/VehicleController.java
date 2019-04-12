@@ -2,6 +2,7 @@ package com.doyouevenjavabro.carwell.vehicles;
 
 import java.util.List;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,12 +32,12 @@ public class VehicleController {
 		return vehicleDB.findAll();
 	}
 
-	@GetMapping("vehicles/id/{id}")
-	public ResponseEntity<Vehicle> getVehicle(@PathVariable("id") Integer id) {
-		Vehicle foundVehicle = vehicleDB.findByVehicleId(id);
+	@GetMapping("vehicles/v_id/{v_id}")
+	public ResponseEntity<Vehicle> getVehicle(@PathVariable("v_id") Integer v_id) {
+		Vehicle foundVehicle = vehicleDB.findByVehicleId(v_id);
 
 		if (foundVehicle == null) {
-			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that id").build();
+			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that v_id").build();
 		}
 		return ResponseEntity.ok(foundVehicle);
 	}
@@ -67,6 +68,16 @@ public class VehicleController {
 
 		if (foundVehicle == null) {
 			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that model").build();
+		}
+		return ResponseEntity.ok(foundVehicle);
+	}
+	
+	@GetMapping("vehicles/id/{id}")
+	public ResponseEntity<Vehicle> getVehicleById(@PathVariable("id") ObjectId id) {
+		Vehicle foundVehicle = vehicleDB.findById(id);
+
+		if (foundVehicle == null) {
+			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that id").build();
 		}
 		return ResponseEntity.ok(foundVehicle);
 	}
