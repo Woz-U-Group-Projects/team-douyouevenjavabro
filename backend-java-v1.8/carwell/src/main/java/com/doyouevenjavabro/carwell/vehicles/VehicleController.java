@@ -60,4 +60,14 @@ public class VehicleController {
 		}
 		return ResponseEntity.ok(foundVehicle);
 	}
+	
+	@GetMapping("vehicles/model/{model}")
+	public ResponseEntity<Vehicle> getVehicleByModel(@PathVariable("model") String model) {
+		Vehicle foundVehicle = vehicleDB.findByModel(model);
+
+		if (foundVehicle == null) {
+			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that model").build();
+		}
+		return ResponseEntity.ok(foundVehicle);
+	}
 }
