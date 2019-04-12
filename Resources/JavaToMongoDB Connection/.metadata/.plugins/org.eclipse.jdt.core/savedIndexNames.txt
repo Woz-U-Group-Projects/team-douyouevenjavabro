@@ -1,5 +1,0 @@
-INDEX VERSION 1.131+D:\Dev\Group Project\JavaMongoDbAuthentication\.metadata\.plugins\org.eclipse.jdt.core
-1061079043.index
-265234333.index
-2158312854.index
-4020022684.index
