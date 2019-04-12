@@ -51,4 +51,13 @@ public class VehicleController {
 		return ResponseEntity.ok(foundVehicle);
 	}
 
+	@GetMapping("vehicles/make/{make}")
+	public ResponseEntity<Vehicle> getVehicleByMake(@PathVariable("make") String make) {
+		Vehicle foundVehicle = vehicleDB.findByMake(make);
+
+		if (foundVehicle == null) {
+			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that make").build();
+		}
+		return ResponseEntity.ok(foundVehicle);
+	}
 }
