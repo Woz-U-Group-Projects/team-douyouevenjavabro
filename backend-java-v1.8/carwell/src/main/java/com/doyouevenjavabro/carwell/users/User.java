@@ -13,19 +13,19 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer u_ID;
+	private Integer userId;
 	private String firstName;
 	private String lastName;
 	private String username;
 	private String role = "user";
 
 //	Getters and Setters
-	public Integer getU_ID() {
-		return u_ID;
+	public Integer getUserId() {
+		return userId;
 	}
 
-	public void setU_ID(Integer u_ID) {
-		this.u_ID = u_ID;
+	public void setUserId(Integer UserId, Integer userId) {
+		this.userId = userId;
 	}
 
 	public String getFirstName() {
