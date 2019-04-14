@@ -14,7 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Vehicle {
 
 	@Id
-	private ObjectId id;
+	private ObjectId _id;
 	private Integer vehicleId;
 	private String make;
 	private String model;
@@ -23,37 +23,34 @@ public class Vehicle {
 	private String timeStamp = setTimeStamp();
 	private String regDate;
 
-	public Integer getReleaseYear() {
-		return releaseYear;
-	}
-
-	public void setReleaseYear(Integer releaseYear) {
+	public Vehicle() {}
+	
+	public Vehicle(ObjectId _id, Integer vehicleId, String make, String model, Integer releaseYear, Integer milesPerDay, String timeStamp, String regDate) {
+		this._id = _id;
+		this.vehicleId = vehicleId;
+		this.make = make;
+		this.model = model;
 		this.releaseYear = releaseYear;
-	}
-
-	public String getId() {
-		return id.toHexString();
-	}
-
-	public void setId(ObjectId id) {
-		this.id = id;
-	}
-
-	// Getters and Setters
-	public Integer getMilesPerDay() {
-		return milesPerDay;
-	}
-
-	public void setMilesPerDay(Integer milesPerDay) {
 		this.milesPerDay = milesPerDay;
+		this.timeStamp = timeStamp;
+		this.regDate = regDate;
+		
+	}
+	
+	public String get_id() {
+		return _id.toHexString();
+	}
+
+	public void set_id(ObjectId _id) {
+		this._id = _id;
 	}
 
 	public Integer getVehicleId() {
 		return vehicleId;
 	}
 
-	public void setVehicleId(Integer vID) {
-		this.vehicleId = vID;
+	public void setVehicleId(Integer vehicleId) {
+		this.vehicleId = vehicleId;
 	}
 
 	public String getMake() {
@@ -78,6 +75,23 @@ public class Vehicle {
 
 	public void setYear(Integer year) {
 		this.releaseYear = year;
+	}
+	
+	public Integer getReleaseYear() {
+		return releaseYear;
+	}
+
+	public void setReleaseYear(Integer releaseYear) {
+		this.releaseYear = releaseYear;
+	}
+	
+	// Getters and Setters
+	public Integer getMilesPerDay() {
+		return milesPerDay;
+	}
+
+	public void setMilesPerDay(Integer milesPerDay) {
+		this.milesPerDay = milesPerDay;
 	}
 
 	public String getTimeStamp() {

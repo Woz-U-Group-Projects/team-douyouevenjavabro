@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -33,13 +34,29 @@ public class VehicleController {
 		System.out.println("Vehicles were requested from DB. Return is: " + vehicleDB.findAll());
 		return vehicleDB.findAll();
 	}
-
-	@GetMapping("vehicles/v_id/{v_id}")
-	public ResponseEntity<Vehicle> getVehicle(@PathVariable("v_id") Integer v_id) {
-		Vehicle foundVehicle = vehicleDB.findByVehicleId(v_id);
+	
+//	@RequestMapping(value = "api/vehicles/id/{id}", method = RequestMethod.GET)
+//	public Vehicle getVehicleById(@PathVariable("id") ObjectId id) {
+//		return vehicleDB.findBy_id(id);
+//	}
+	
+	
+	@GetMapping("vehicles/id/{id}")
+	public ResponseEntity<Vehicle> getVehicleById(@PathVariable("id") ObjectId id) {
+		Vehicle foundVehicle = vehicleDB.findBy_id(id);
 
 		if (foundVehicle == null) {
-			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that v_id").build();
+			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that _id").build();
+		}
+		return ResponseEntity.ok(foundVehicle);
+	}
+
+	@GetMapping("vehicles/vehicleId/{vehicleId}")
+	public ResponseEntity<Vehicle> getVehicle(@PathVariable("vehicleId") Integer vehicleId) {
+		Vehicle foundVehicle = vehicleDB.findByVehicleId(vehicleId);
+
+		if (foundVehicle == null) {
+			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that vehicleId").build();
 		}
 		return ResponseEntity.ok(foundVehicle);
 	}
@@ -70,16 +87,6 @@ public class VehicleController {
 
 		if (foundVehicle == null) {
 			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that model").build();
-		}
-		return ResponseEntity.ok(foundVehicle);
-	}
-	
-	@GetMapping("vehicles/id/{id}")
-	public ResponseEntity<Vehicle> getVehicleById(@PathVariable("id") ObjectId id) {
-		Vehicle foundVehicle = vehicleDB.findById(id);
-
-		if (foundVehicle == null) {
-			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that id").build();
 		}
 		return ResponseEntity.ok(foundVehicle);
 	}
