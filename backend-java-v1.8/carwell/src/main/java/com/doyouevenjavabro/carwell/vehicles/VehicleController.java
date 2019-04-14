@@ -20,6 +20,7 @@ public class VehicleController {
 	VehicleRepository vehicleDB;
 
 //	GET all vehicles @ api/vehicles/all
+	@CrossOrigin(origins = "http://localhost:3001")
 	@GetMapping("vehicles/all")
 	public List<Vehicle> getVehicles() {
 		System.out.println("Got request for all vehicles.");
