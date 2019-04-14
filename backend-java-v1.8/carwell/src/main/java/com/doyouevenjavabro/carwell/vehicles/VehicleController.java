@@ -22,15 +22,8 @@ public class VehicleController {
 	@Autowired
 	VehicleRepository vehicleDB;
 
-//	display all vehicles GET@api/vehicles/all
-//	@GetMapping("/vehicles/all")
-//	public List<Vehicle> getVehicles(){
-//		List <Vehicle> foundVehicles = vehicleDB.findAll();
-//		System.out.println("Vehicles were requested from DB. Return is: " + foundVehicles);
-//		return foundVehicles;
-//	}
-
-//	display all vehicles GET@api/vehicles/all
+//	GET all vehicles @ api/vehicles/all
+	@CrossOrigin(origins = "http://localhost:3001")
 	@GetMapping("vehicles/all")
 	public List<Vehicle> getVehicles() {
 		System.out.println("Vehicles were requested from DB. Return is: " + vehicleDB.findAll());
