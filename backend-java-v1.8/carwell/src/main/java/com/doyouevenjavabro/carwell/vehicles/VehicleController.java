@@ -1,14 +1,10 @@
 package com.doyouevenjavabro.carwell.vehicles;
 
-import java.util.List;
+import java.util.Optional;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -21,80 +17,48 @@ public class VehicleController {
 
 	@Autowired
 	VehicleRepository vehicleDB;
-
-//	GET all vehicles @ api/vehicles/all
-	@CrossOrigin(origins = "http://localhost:3001")
-	@GetMapping("vehicles/all")
-	public List<Vehicle> getVehicles() {
-		System.out.println("Vehicles were requested from DB. Return is: " + vehicleDB.findAll());
+	
+	@RequestMapping(method=RequestMethod.GET, value="/vehicles")
+	public Iterable<Vehicle> vehicle() {
 		return vehicleDB.findAll();
 	}
 	
-//	@RequestMapping(value = "api/vehicles/id/{id}", method = RequestMethod.GET)
-//	public Vehicle getVehicleById(@PathVariable("id") ObjectId id) {
-//		return vehicleDB.findBy_id(id);
-//	}
-	
-	
-	@GetMapping("vehicles/id/{id}")
-	public ResponseEntity<Vehicle> getVehicleById(@PathVariable("id") ObjectId id) {
-		Vehicle foundVehicle = vehicleDB.findBy_id(id);
-
-		if (foundVehicle == null) {
-			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that _id").build();
-		}
-		return ResponseEntity.ok(foundVehicle);
-	}
-
-	@GetMapping("vehicles/vehicleId/{vehicleId}")
-	public ResponseEntity<Vehicle> getVehicle(@PathVariable("vehicleId") Integer vehicleId) {
-		Vehicle foundVehicle = vehicleDB.findByVehicleId(vehicleId);
-
-		if (foundVehicle == null) {
-			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that vehicleId").build();
-		}
-		return ResponseEntity.ok(foundVehicle);
-	}
-	
-	@GetMapping("vehicles/year/{releaseYear}")
-	public ResponseEntity<Vehicle> getVehicleByReleaseYear(@PathVariable("releaseYear") Integer releaseYear) {
-		Vehicle foundVehicle = vehicleDB.findByReleaseYear(releaseYear);
-
-		if (foundVehicle == null) {
-			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that id").build();
-		}
-		return ResponseEntity.ok(foundVehicle);
-	}
-
-	@GetMapping("vehicles/make/{make}")
-	public ResponseEntity<Vehicle> getVehicleByMake(@PathVariable("make") String make) {
-		Vehicle foundVehicle = vehicleDB.findByMake(make);
-
-		if (foundVehicle == null) {
-			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that make").build();
-		}
-		return ResponseEntity.ok(foundVehicle);
-	}
-	
-	@GetMapping("vehicles/model/{model}")
-	public ResponseEntity<Vehicle> getVehicleByModel(@PathVariable("model") String model) {
-		Vehicle foundVehicle = vehicleDB.findByModel(model);
-
-		if (foundVehicle == null) {
-			return ResponseEntity.notFound().header("Vehicle", "Nothing found with that model").build();
-		}
-		return ResponseEntity.ok(foundVehicle);
-	}
-	
-	//	POST vehicle (id)
-	@PostMapping("/vehicles")
-	public ResponseEntity<Vehicle> postVehicle(@RequestBody Vehicle vehicle) {
-		Vehicle createdVehicle = vehicleDB.save(vehicle);
-		return ResponseEntity.ok(createdVehicle);
-	}
-	
-	//	PUT vehicle (id)
+	@RequestMapping(method=RequestMethod.POST, value="/vehicles")
+	public Vehicle save(@RequestBody Vehicle vehicle) {
+		vehicleDB.save(vehicle);
 		
-	//	DELETE vehicle (id)
+		return vehicle;
+	}
 	
+	@RequestMapping(method=RequestMethod.PUT, value="/vehicles/{id}")
+	public Vehicle update(@PathVariable String id, @RequestBody Vehicle vehicle) {
+		Optional<Vehicle> optvehicle = vehicleDB.findById(id);
+		Vehicle c = optvehicle.get();
+		
+		if(vehicle.getVehicleId() != null)
+			c.setVehicleId(vehicle.getVehicleId());
+		if(vehicle.getReleaseYear() != null)
+			c.setReleaseYear(vehicle.getReleaseYear());
+		if(vehicle.getYear() != null)
+			c.setYear(vehicle.getYear());
+		if(vehicle.getMake() != null)
+			c.setMake(vehicle.getMake());
+		if(vehicle.getModel() != null)
+			c.setModel(vehicle.getModel());
+		if(vehicle.getMilesPerDay() != null)
+			c.setMilesPerDay(vehicle.getMilesPerDay());
+		if(vehicle.getVehicleId() != null)
+			c.setVehicleId(vehicle.getVehicleId());
+		vehicleDB.save(c);
+		return c;
+	}
+	
+	@RequestMapping(method=RequestMethod.DELETE, value="/vehicles/{id}")
+	public String delete(@PathVariable String id) {
+		Optional<Vehicle> optvehicle = vehicleDB.findById(id);
+		Vehicle vehicle = optvehicle.get();
+		vehicleDB.delete(vehicle);
+		
+		return "";
+	}
 }

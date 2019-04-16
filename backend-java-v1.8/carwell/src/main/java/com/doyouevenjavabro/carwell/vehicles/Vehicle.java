@@ -10,6 +10,8 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Entity
+//@QueryEntity
+//@CompoundIndexes({ @CompoundIndex(make = "vehicle_make", def = "{'vehicle.make' : 1}") })
 @Document(collection = "vehicles")
 public class Vehicle {
 
