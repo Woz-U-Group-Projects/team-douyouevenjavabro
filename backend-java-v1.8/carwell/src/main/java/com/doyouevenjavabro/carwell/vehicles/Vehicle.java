@@ -10,49 +10,46 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Entity
-//@QueryEntity
-//@CompoundIndexes({ @CompoundIndex(make = "vehicle_make", def = "{'vehicle.make' : 1}") })
 @Document(collection = "vehicles")
 public class Vehicle {
 
 	@Id
-	private ObjectId _id;
-	private Integer vehicleId;
+	private ObjectId id;
+	private String owner;
 	private String make;
 	private String model;
 	private Integer releaseYear;
 	private Integer milesPerDay;
-	private String timeStamp = setTimeStamp();
-	private String regDate;
+	private String regDate = setTimeStamp();
 
-	public Vehicle() {}
-	
-	public Vehicle(ObjectId _id, Integer vehicleId, String make, String model, Integer releaseYear, Integer milesPerDay, String timeStamp, String regDate) {
-		this._id = _id;
-		this.vehicleId = vehicleId;
+//Overloaded constructor	
+	public Vehicle(ObjectId id, String owner, String make, String model, Integer releaseYear, Integer milesPerDay,
+			String regDate) {
+		this.id = id;
+		this.owner = owner;
 		this.make = make;
 		this.model = model;
 		this.releaseYear = releaseYear;
 		this.milesPerDay = milesPerDay;
-		this.timeStamp = timeStamp;
 		this.regDate = regDate;
-		
-	}
-	
-	public String get_id() {
-		return _id.toHexString();
+
 	}
 
-	public void set_id(ObjectId _id) {
-		this._id = _id;
+// Getters and Setters
+	public String getId() {
+		return id.toHexString();
 	}
 
-	public Integer getVehicleId() {
-		return vehicleId;
+	public void setId(ObjectId id) {
+		this.id = id;
 	}
 
-	public void setVehicleId(Integer vehicleId) {
-		this.vehicleId = vehicleId;
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
 	}
 
 	public String getMake() {
@@ -71,14 +68,6 @@ public class Vehicle {
 		this.model = model;
 	}
 
-	public Integer getYear() {
-		return releaseYear;
-	}
-
-	public void setYear(Integer year) {
-		this.releaseYear = year;
-	}
-	
 	public Integer getReleaseYear() {
 		return releaseYear;
 	}
@@ -86,8 +75,7 @@ public class Vehicle {
 	public void setReleaseYear(Integer releaseYear) {
 		this.releaseYear = releaseYear;
 	}
-	
-	// Getters and Setters
+
 	public Integer getMilesPerDay() {
 		return milesPerDay;
 	}
@@ -96,10 +84,11 @@ public class Vehicle {
 		this.milesPerDay = milesPerDay;
 	}
 
-	public String getTimeStamp() {
-		return timeStamp;
+	public String getRegDate() {
+		return regDate;
 	}
 
+//Capture current time/date function
 	public static String setTimeStamp() {
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -107,7 +96,4 @@ public class Vehicle {
 		return formatDateTime;
 	}
 
-	public String getRegDate() {
-		return regDate;
-	}
 }
