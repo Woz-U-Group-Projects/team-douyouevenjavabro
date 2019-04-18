@@ -36,6 +36,7 @@ public class ServiceMaster {
 //milestones
 	//7500
 	public final static String milestone7hk = serviceA;
+	public final static String[] milestone7k = {serviceA1, serviceA2};
 	//15000
 	public final static String milestone15k = serviceA + " " + serviceB;
 	//22500
