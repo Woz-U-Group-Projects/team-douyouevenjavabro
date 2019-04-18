@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
+import { Link, Route} from 'react-router-dom';
 import './AppMenu.css';
+import CreateAccount from './CreateAccount';
+import Home from './Home';
+import About from './About';
+import Login from './Login';
+
 
 class AppMenu extends Component {
 
@@ -34,9 +40,11 @@ class AppMenu extends Component {
         let linksMarkup = this.props.links.map((links, index) => {
 
         let linkMarkup = links.active ? (
-        <a className="menu__link menu__link--active" href={links.link}>{links.label}</a>
+        <Link className="menu__link menu__link--active" to={links.link}>{links.label}</Link>
         ) : (
-            <a className="menu__link" href={links.link}>{links.label}</a>
+            <Link className="menu__link" to={links.link}>{links.label}</Link>
+            
+            
         );   
             return (
             <li key={index} className="menu__list-item">
@@ -47,7 +55,7 @@ class AppMenu extends Component {
 
         return (
             
-            
+            <div>
                 <div className="container center">
                     <nav className="menu">
                         <h1 style={{backgroundImage: 'url(' + this.props.logo + ')'}} className="menu__logo">CarWell!</h1>
@@ -64,11 +72,16 @@ class AppMenu extends Component {
                         {searchForm}
 
                         </div>
-                    </nav>
-                </div>  
-                             
-             
+                    </nav>                    
+                </div>
+                    <div className="container">
+                        <Route path="/" exact component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route path="/create" component={CreateAccount} />
+                        <Route path="/login" component={Login} />    
+                    </div>  
             
+            </div>
         );
     }
 }
