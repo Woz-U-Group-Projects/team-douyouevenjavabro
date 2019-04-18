@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,20 +15,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/api/vehicles")
+@RequestMapping("/api/vehicles/")
 public class VehicleController {
 
 	@Autowired
 	VehicleRepository vehicleDB;
 
 //GET all	
-	@RequestMapping(method = RequestMethod.GET, value = "/")
+	@RequestMapping(method = RequestMethod.GET, value = { "admin", "admin/" })
 	public Iterable<Vehicle> vehicle() {
 		return vehicleDB.findAll();
 	}
 
 //GET by id
-	@RequestMapping(method = RequestMethod.GET, value = "/id/{id}")
+	@RequestMapping(method = RequestMethod.GET, value = "{id}")
 	public ResponseEntity<Vehicle> getVehicle(@PathVariable("id") ObjectId id) {
 		Vehicle foundVehicle = vehicleDB.findById(id);
 
@@ -41,7 +40,7 @@ public class VehicleController {
 	}
 
 //GET by multiple entries by owner	
-	@RequestMapping(method = RequestMethod.GET, value = "/owner/{owner}")
+	@RequestMapping(method = RequestMethod.GET, value = "owner/{owner}")
 	public List<Vehicle> getVehiclesByOwner(@PathVariable("owner") String owner) {
 		System.out.println("Got search request for all vehivles based on: " + owner);
 		List<Vehicle> result = vehicleDB.findByOwner(owner);
@@ -55,24 +54,16 @@ public class VehicleController {
 		return result;
 
 	}
-//----------------------------------------------------------------------------- Rafael's
-//	@RequestMapping(method = RequestMethod.POST, value = "/")
-//	public Vehicle save(@RequestBody Vehicle vehicle) {
-//		vehicleDB.save(vehicle);
-//		return vehicle;
-//	}
-//----------------------------------------------------------------------------- Rafael's
 
 //POST	
-	@PostMapping("/")
-	public ResponseEntity<Vehicle> postVehicle(@RequestBody Vehicle newVehicle) {
-		Vehicle createdVehicle = vehicleDB.save(newVehicle);
-		System.out.println("Created new vehicle!");
-		return ResponseEntity.ok(createdVehicle);
+	@RequestMapping(method = RequestMethod.POST, value = { "" })
+	public Vehicle save(@RequestBody Vehicle vehicle) {
+		vehicleDB.save(vehicle);
+		return vehicle;
 	}
 
 //PUT by id	
-	@RequestMapping(method = RequestMethod.PUT, value = "/{id}")
+	@RequestMapping(method = RequestMethod.PUT, value = "{id}")
 	public Vehicle update(@PathVariable String id, @RequestBody Vehicle vehicle) {
 		Optional<Vehicle> optvehicle = vehicleDB.findById(id);
 		Vehicle updatedVehicle = optvehicle.get();
@@ -93,12 +84,12 @@ public class VehicleController {
 	}
 
 //DELETE	
-	@RequestMapping(method = RequestMethod.DELETE, value = "/{id}")
+	@RequestMapping(method = RequestMethod.DELETE, value = "{id}")
 	public String delete(@PathVariable String id) {
 		Optional<Vehicle> optvehicle = vehicleDB.findById(id);
 		Vehicle vehicle = optvehicle.get();
 		vehicleDB.delete(vehicle);
 		System.out.println("Deleted vehicle");
-		return "";
+		return "Success";
 	}
 }

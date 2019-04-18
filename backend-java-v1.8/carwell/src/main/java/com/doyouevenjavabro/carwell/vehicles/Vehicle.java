@@ -23,15 +23,14 @@ public class Vehicle {
 	private String regDate = setTimeStamp();
 
 //Overloaded constructor	
-	public Vehicle(ObjectId id, String owner, String make, String model, Integer releaseYear, Integer milesPerDay,
-			String regDate) {
+	public Vehicle(ObjectId id, String owner, String make, String model, Integer releaseYear, Integer milesPerDay) {
 		this.id = id;
 		this.owner = owner;
 		this.make = make;
 		this.model = model;
 		this.releaseYear = releaseYear;
 		this.milesPerDay = milesPerDay;
-		this.regDate = regDate;
+//		this.regDate = regDate; should be commented out
 
 	}
 
