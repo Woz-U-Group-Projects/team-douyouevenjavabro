@@ -38,6 +38,24 @@ public class UserController {
 		System.out.println("Got request for user using unique ID: " + id);
 		return ResponseEntity.ok(foundUser);
 	}
+	
+	@RequestMapping(method=RequestMethod.PUT, value="/users/{userId}")
+	public User update(@PathVariable ObjectId id, @RequestBody User user) {
+		Optional<User> optuser = userDB.findById(id);
+		User u = optuser.get();
+		
+		if(user.getUserId() != null)
+			u.setUserId(user.getUserId());
+		if(user.getFirstName() != null)
+			u.setFirstName(user.getFirstName());
+		if(user.getLastName() != null)
+			u.setLastName(user.getLastName());
+		if(user.getEmail() != null)
+			u.setEmail(user.getEmail());
+		userDB.save(u);
+		return u;
+	}
+	
 
 // GET by multiple entries by role
 	@RequestMapping(method = RequestMethod.GET, value = "role/{role}")
