@@ -1,11 +1,14 @@
 package com.doyouevenjavabro.carwell.vehicles;
 
+import java.util.List;
+
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface VehicleRepository extends MongoRepository <Vehicle, String>{
-Vehicle findByVehicleId(Integer id);
-Vehicle findByReleaseYear(Integer releaseYear);
-Vehicle findById(ObjectId id);
-Vehicle findByModel(String model);
+public interface VehicleRepository extends MongoRepository<Vehicle, String> {
+	Vehicle findById (ObjectId id);
+	List<Vehicle> findByOwner(String owner);
+
+	@Override
+	void delete(Vehicle deleted);
 }
