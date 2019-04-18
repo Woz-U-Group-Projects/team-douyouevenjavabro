@@ -5,17 +5,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.doyouevenjavabro.carwell.services.ServiceMaster;
 
-//import com.doyouevenjavabro.carwell.services.ServiceMaster;
-
 @SpringBootApplication
 public class CarwellApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CarwellApplication.class, args);
-		System.out.println("bleh");
-//		System.out.println(ServiceMaster.serviceA1);
-		System.out.println(ServiceMaster.milestone7k);
-		
+		System.out.println("yeah, yeah, im running...");
+//example of pulling and printing items from milestone30k array		
+		for (String arrayItem : ServiceMaster.milestone30k) {
+			System.out.println(arrayItem);
+		}
+
 	}
 
 }
