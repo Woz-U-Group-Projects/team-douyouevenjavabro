@@ -20,6 +20,7 @@ public class Vehicle {
 	private String model;
 	private Integer releaseYear;
 	private Integer milesPerDay;
+	private Integer milesAtRegestration;
 	private String regDate = setTimeStamp();
 
 //Overloaded constructor	
@@ -93,6 +94,14 @@ public class Vehicle {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		String formatDateTime = now.format(formatter);
 		return formatDateTime;
+	}
+
+	public Integer getMilesAtRegestration() {
+		return milesAtRegestration;
+	}
+
+	public void setMilesAtRegestration(Integer milesAtRegestration) {
+		this.milesAtRegestration = milesAtRegestration;
 	}
 
 }
