@@ -1,5 +1,11 @@
 package com.doyouevenjavabro.carwell.services;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import com.doyouevenjavabro.carwell.vehicles.Vehicle;
+
 public class ServiceMaster {
 //	this class contains hard coded values of different services
 
@@ -34,8 +40,7 @@ public class ServiceMaster {
 	public final static String serviceFinal = "I got no recommendations from the dealer for the cars with mileage beyond 150,000 miles, maybe it is a time to think about a new car??";
 //milestones
 	// 7500
-//	public final static String milestone7hk = serviceA;
-	public final static String[] milestone7k = { serviceA1, serviceA2 };
+	public final static String[] milestone7hk = { serviceA1, serviceA2 };
 	// 15000
 	public final static String[] milestone15k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11 };
@@ -91,5 +96,28 @@ public class ServiceMaster {
 			serviceC3 };
 	// Above150000
 	public final static String[] milestoneAbove150k = { serviceFinal };
+	// all
+	public final static String[][] allMilestones = { milestone7hk, milestone15k, milestone22hk, milestone30k,
+			milestone37hk, milestone45k, milestone52hk, milestone60k, milestone67hk, milestone75k, milestone82hk,
+			milestone90k, milestone97hk, milestone105k, milestone112hk, milestone120k, milestone127hk, milestone135k,
+			milestone142hk, milestone150k, milestoneAbove150k };
 
+////method to calculate difference in days
+//	public static long dayDifference(String regDate) throws ParseException {
+//		String currentDate = Vehicle.setTimeStamp();
+//		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+//
+//		Date regDateParsed = format.parse(regDate);
+//		Date currentDateParsed = format.parse(currentDate);
+//		long diff = currentDateParsed.getTime() - regDateParsed.getTime();
+//		long diffDays = diff / (24 * 60 * 60 * 1000);
+//		System.out.println(diffDays + " day(s)");
+//		return diffDays;
+//	}
+//	
+////method to calculate current mileage
+//	public static Integer currentMileage(Integer regMiles, String regDate, String currentDate, Integer milesPerDay) {
+//		
+//		return milesPerDay;
+//	}
 }
