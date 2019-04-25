@@ -202,7 +202,7 @@ public class ServiceMasterController {
 		String[] usersRecomendation = {"There was an error"};
 		// 7500 miles
 		if (currentMileage >= 0 && currentMileage <= 7500) {
-			System.out.println("Next milestone is 75000");
+			System.out.println("Next milestone is 7500");
 			usersRecomendation = ServiceMaster.milestone7hk;
 		}
 		// 15000 miles
