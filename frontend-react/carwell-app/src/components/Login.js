@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import LoginForm from './LoginForm';
 
 
 
@@ -10,7 +10,7 @@ render() {
 
     return(
         <div>            
-            Login
+            <LoginForm />
         </div>
     )
 }

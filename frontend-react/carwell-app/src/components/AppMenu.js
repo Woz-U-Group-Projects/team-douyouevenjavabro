@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Link, Route} from 'react-router-dom';
+import { Link , Route } from 'react-router-dom';
 import './AppMenu.css';
 import CreateAccount from './CreateAccount';
 import Home from './Home';
 import About from './About';
 import Login from './Login';
+import UserProfile from './UserProfile';
 
 
 class AppMenu extends Component {
@@ -75,10 +76,11 @@ class AppMenu extends Component {
                     </nav>                    
                 </div>
                     <div className="container">
-                        <Route path="/" exact component={Home} />
-                        <Route path="/about" component={About} />
-                        <Route path="/create" component={CreateAccount} />
-                        <Route path="/login" component={Login} />    
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/create" component={CreateAccount} />
+                        <Route exact path="/login" component={Login} /> 
+                        <Route exact path="/user/profile/{u_id}" component={UserProfile} />   
                     </div>  
             
             </div>
