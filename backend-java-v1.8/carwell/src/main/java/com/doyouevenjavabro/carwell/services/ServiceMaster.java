@@ -40,58 +40,58 @@ public class ServiceMaster {
 	public final static String serviceFinal = "I got no recommendations from the dealer for the cars with mileage beyond 150,000 miles, maybe it is a time to think about a new car??";
 //milestones
 	// 7500
-	public final static String[] milestone7hk = { serviceA1, serviceA2 };
+	public final static String[] milestone7hk = { "Recommendations for 7500 miles milestone", serviceA1, serviceA2 };
 	// 15000
-	public final static String[] milestone15k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone15k = { "Recommendations for 15000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11 };
 	// 22500
-	public final static String[] milestone22hk = { serviceA1, serviceA2 };
+	public final static String[] milestone22hk = { "Recommendations for 22500 miles milestone", serviceA1, serviceA2 };
 	// 30000
-	public final static String[] milestone30k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone30k = { "Recommendations for 30000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11, serviceC1, serviceC2,
 			serviceC3, serviceAdd30k };
 	// 37500
-	public final static String[] milestone37hk = { serviceA1, serviceA2 };
+	public final static String[] milestone37hk = { "Recommendations for 37500 miles milestone", serviceA1, serviceA2 };
 	// 45000
-	public final static String[] milestone45k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone45k = { "Recommendations for 45000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11, serviceAdd45k };
 	// 52500
-	public final static String[] milestone52hk = { serviceA1, serviceA2 };
+	public final static String[] milestone52hk = { "Recommendations for 52500 miles milestone", serviceA1, serviceA2 };
 	// 60000
-	public final static String[] milestone60k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone60k = { "Recommendations for 60000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11, serviceC1, serviceC2,
 			serviceC3 };
 	// 67500
-	public final static String[] milestone67hk = { serviceA1, serviceA2 };
+	public final static String[] milestone67hk = { "Recommendations for 67500 miles milestone", serviceA1, serviceA2 };
 	// 75000
-	public final static String[] milestone75k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone75k = { "Recommendations for 75000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11, serviceAdd75k };
 	// 82500
-	public final static String[] milestone82hk = { serviceA1, serviceA2 };
+	public final static String[] milestone82hk = {"Recommendations for 82500 miles milestone",  serviceA1, serviceA2 };
 	// 90000
-	public final static String[] milestone90k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone90k = { "Recommendations for 90000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11, serviceC1, serviceC2,
 			serviceC3, serviceAdd90k };
 	// 97500
-	public final static String[] milestone97hk = { serviceA1, serviceA2 };
+	public final static String[] milestone97hk = { "Recommendations for 97500 miles milestone", serviceA1, serviceA2 };
 	// 105000
-	public final static String[] milestone105k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone105k = { "Recommendations for 105000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11, serviceAdd105k };
 	// 112500
-	public final static String[] milestone112hk = { serviceA1, serviceA2 };
+	public final static String[] milestone112hk = { "Recommendations for 112500 miles milestone", serviceA1, serviceA2 };
 	// 120000
-	public final static String[] milestone120k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone120k = { "Recommendations for 120000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11, serviceC1, serviceC2,
 			serviceC3 };
 	// 127500
-	public final static String[] milestone127hk = { serviceA1, serviceA2 };
+	public final static String[] milestone127hk = { "Recommendations for 127500 miles milestone", serviceA1, serviceA2 };
 	// 135000
-	public final static String[] milestone135k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone135k = { "Recommendations for 135000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11 };
 	// 142500
-	public final static String[] milestone142hk = { serviceA1, serviceA2 };
+	public final static String[] milestone142hk = { "Recommendations for 142500 miles milestone", serviceA1, serviceA2 };
 	// 150000
-	public final static String[] milestone150k = { serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
+	public final static String[] milestone150k = { "Recommendations for 150000 miles milestone", serviceA1, serviceA2, serviceB1, serviceB2, serviceB3, serviceB4,
 			serviceB5, serviceB6, serviceB7, serviceB8, serviceB9, serviceB10, serviceB11, serviceC1, serviceC2,
 			serviceC3 };
 	// Above150000
@@ -103,21 +103,20 @@ public class ServiceMaster {
 			milestone142hk, milestone150k, milestoneAbove150k };
 
 ////method to calculate difference in days
-//	public static long dayDifference(String regDate) throws ParseException {
-//		String currentDate = Vehicle.setTimeStamp();
-//		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-//
-//		Date regDateParsed = format.parse(regDate);
-//		Date currentDateParsed = format.parse(currentDate);
-//		long diff = currentDateParsed.getTime() - regDateParsed.getTime();
-//		long diffDays = diff / (24 * 60 * 60 * 1000);
-//		System.out.println(diffDays + " day(s)");
-//		return diffDays;
-//	}
-//	
+	public static long dayDifference(String regDate) throws ParseException {
+		String currentDate = Vehicle.setTimeStamp();
+		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+
+		Date regDateParsed = format.parse(regDate);
+		Date currentDateParsed = format.parse(currentDate);
+		long diff = currentDateParsed.getTime() - regDateParsed.getTime();
+		long diffDays = diff / (24 * 60 * 60 * 1000);
+		return diffDays;
+	}
+	
 ////method to calculate current mileage
-//	public static Integer currentMileage(Integer regMiles, String regDate, String currentDate, Integer milesPerDay) {
-//		
-//		return milesPerDay;
-//	}
+	public static Integer currentMileage(Integer regMiles, String regDate, String currentDate, Integer milesPerDay) {
+		
+		return milesPerDay;
+	}
 }

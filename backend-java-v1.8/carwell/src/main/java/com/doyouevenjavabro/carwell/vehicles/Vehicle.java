@@ -91,7 +91,7 @@ public class Vehicle {
 //Capture current time/date function
 	public static String setTimeStamp() {
 		LocalDateTime now = LocalDateTime.now();
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
 		String formatDateTime = now.format(formatter);
 		return formatDateTime;
 	}
