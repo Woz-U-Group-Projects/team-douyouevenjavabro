@@ -51,6 +51,7 @@ class Users extends React.Component {
               <CustomTableCell align="right">Last Name</CustomTableCell>
               <CustomTableCell align="right">Username</CustomTableCell>
               <CustomTableCell align="right">Password</CustomTableCell>
+              <CustomTableCell align="right">Role</CustomTableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -62,6 +63,7 @@ class Users extends React.Component {
                 <CustomTableCell align="right">{user.lastName}</CustomTableCell>
                 <CustomTableCell align="right">{user.username}</CustomTableCell>
                 <CustomTableCell align="right">{user.password}</CustomTableCell>
+                <CustomTableCell align="right">{user.role}</CustomTableCell>
               </TableRow>
             ))}
           </TableBody>
