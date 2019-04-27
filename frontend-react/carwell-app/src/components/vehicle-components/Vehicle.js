@@ -1,5 +1,5 @@
 import React from 'react';
-import * as vehiclesApi from '../APIs/vehiclesApi';
+import * as vehicleApi from '../../APIs/vehicleApi';
 // import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-class Vehicles extends React.Component {
+class Vehicle extends React.Component {
   
 
     state = {
@@ -17,7 +17,7 @@ class Vehicles extends React.Component {
     };
 
     callVehicles = () => {
-        vehiclesApi.fetchValues().then(response => {
+        vehicleApi.fetchValues().then(response => {
             console.log('callVehicles: ', response);
             this.setState(() => {
                 return {
@@ -96,4 +96,4 @@ class Vehicles extends React.Component {
       }
 }
 
-export default Vehicles;
+export default Vehicle;

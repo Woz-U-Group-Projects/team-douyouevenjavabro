@@ -11,7 +11,9 @@ class App extends Component {
                 { label: 'Home', link: './', active: true},
                 { label: 'About', link: '/about'},
                 { label: 'Create Account', link: '/create'},
-                { label: 'Login', link: '/login'}
+                { label: 'Login', link: '/login'},
+                { label: 'Test', link: '/test'}
+
         ];
 
         return (

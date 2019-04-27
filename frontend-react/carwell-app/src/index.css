@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    width: 1000px;
+    /* width: 1000px; */
     margin: 20px auto;
 }
 
@@ -42,4 +42,8 @@ body {
 .hide {
     display: none;
 }
-
+.submissionForm input{
+    margin-left: 10px;
+    padding: 4px;
+    width: 50%;
+  }
