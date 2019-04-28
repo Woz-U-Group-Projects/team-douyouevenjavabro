@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, Route } from "react-router-dom";
 import "./AppMenu.css";
-import CreateAccount from "./user-components/CreateAccount";
+import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/About";
 import About from "./pages/About";
 import Login from "./pages/Login";

@@ -10,7 +10,7 @@ class App extends Component {
             let links = [
                 { label: 'Home', link: './', active: true},
                 { label: 'About', link: '/about'},
-                { label: 'Create Account', link: '/create'},
+                { label: 'Register', link: '/create'},
                 { label: 'Login', link: '/login'},
                 { label: 'Test', link: '/test'}
 

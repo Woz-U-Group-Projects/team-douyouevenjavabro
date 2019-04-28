@@ -5,6 +5,8 @@ import Vehicle from "../vehicle-components/Vehicle";
 import User from "../user-components/User";
 import UserProfile from "../user-components/UserProfile";
 import Users from "../user-components/Users";
+import CreateUser from "../user-components/CreateUser";
+
 
 class Test extends Component {
   render() {
@@ -28,6 +30,9 @@ class Test extends Component {
         <hr />
         <h2>Users</h2>
         <Users />
+        <hr />
+        <h2>Create User (CreateAccountForm)</h2>
+        <CreateUser />
         <hr />
 
       </div>

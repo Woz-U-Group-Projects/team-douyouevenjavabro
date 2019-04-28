@@ -1,10 +1,9 @@
 package com.doyouevenjavabro.carwell.users;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Entity
@@ -12,21 +11,29 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer userId;
+	private ObjectId id;
 	private String firstName;
 	private String lastName;
 	private String username;
-	private String email;
-//	private String role = "user";
+	private String password;
+	private String role = "user";
 
-//	Getters and Setters
-	public Integer getUserId() {
-		return userId;
+//Overloaded constructor
+	public User(ObjectId id, String firstName, String lastName, String username, String password) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.username = username;
+		this.password = password;
 	}
 
-	public void setUserId(Integer UserId, Integer userId) {
-		this.userId = userId;
+//	Getters and Setters
+	public String getId() {
+		return id.toHexString();
+	}
+
+	public void setId(ObjectId id) {
+		this.id = id;
 	}
 
 	public String getFirstName() {
@@ -45,14 +52,6 @@ public class User {
 		this.lastName = lastName;
 	}
 
-//	public String getRole() {
-//		return role;
-//	}
-//
-//	public void setRole(String role) {
-//		this.role = role;
-//	}
-
 	public String getUsername() {
 		return username;
 	}
@@ -61,12 +60,19 @@ public class User {
 		this.username = username;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
 }

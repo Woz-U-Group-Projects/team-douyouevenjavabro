@@ -47,23 +47,25 @@ class Users extends React.Component {
         <Table>
           <TableHead>
             <TableRow>
+            <CustomTableCell>ID</CustomTableCell>
               <CustomTableCell>First Name</CustomTableCell>
-              <CustomTableCell align="right">Last Name</CustomTableCell>
-              <CustomTableCell align="right">Username</CustomTableCell>
-              <CustomTableCell align="right">Password</CustomTableCell>
-              <CustomTableCell align="right">Role</CustomTableCell>
+              <CustomTableCell>Last Name</CustomTableCell>
+              <CustomTableCell>Username</CustomTableCell>
+              <CustomTableCell>Password</CustomTableCell>
+              <CustomTableCell>Role</CustomTableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {this.state.users.map(user => (
               <TableRow key={user.id}>
                 <CustomTableCell component="th" scope="row">
-                  {user.firstName}
+                  {user.id}
                 </CustomTableCell>
-                <CustomTableCell align="right">{user.lastName}</CustomTableCell>
-                <CustomTableCell align="right">{user.username}</CustomTableCell>
-                <CustomTableCell align="right">{user.password}</CustomTableCell>
-                <CustomTableCell align="right">{user.role}</CustomTableCell>
+                <CustomTableCell>{user.firstName}</CustomTableCell>
+                <CustomTableCell>{user.lastName}</CustomTableCell>
+                <CustomTableCell>{user.username}</CustomTableCell>
+                <CustomTableCell>{user.password}</CustomTableCell>
+                <CustomTableCell>{user.role}</CustomTableCell>
               </TableRow>
             ))}
           </TableBody>
