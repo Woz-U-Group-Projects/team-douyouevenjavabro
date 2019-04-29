@@ -5,7 +5,7 @@ export default class CreateUser extends React.Component {
     state = {
         firstName: '',
         lastName: '',
-        userName: '',
+        username: '',
         password: ''
     };
 
@@ -15,7 +15,7 @@ export default class CreateUser extends React.Component {
 
     handleChange = (e) => {
         this.setState({
-          [e.target.name]: e.target.value
+            [e.target.name]: e.target.value
         });
     };
     // handleSubmit = event => {
@@ -27,11 +27,13 @@ export default class CreateUser extends React.Component {
 
         const user = {
             firstName: this.state.firstName,
-            lastName: this.state.lastName
+            lastName: this.state.lastName,
+            username: this.state.username,
+            password: this.state.password
         };
 
 
-        axios.post(`http://localhost:8080/api/users/`, { user })
+        axios.post(`http://localhost:8080/api/users/`, user)
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -40,36 +42,31 @@ export default class CreateUser extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    First Name:
+            <form onSubmit={this.handleSubmit} className="submissionForm">
           <input
-          type="text" 
-          name="firstName"
-          value={this.state.firstName}
-          onChange={this.handleChange}>
-          </input>
-                    <br />
-                </label>
-
-
-                <input
-                    name="lastName"
-                    placeholder="Last Name"
-                    value={this.state.lastName}
-                    onChange={this.handleChange} >
-                </input>
+                        type="text"
+                        name="firstName"
+                        placeholder="First Name"
+                        value={this.state.firstName}
+                        onChange={this.handleChange}>
+                    </input>
                 <br />
 
+                    <input
+                        name="lastName"
+                        placeholder="Last Name"
+                        value={this.state.lastName}
+                        onChange={this.handleChange} >
+                    </input>
+                <br />
 
                 <input
-                    name="userName"
-                    placeholder="UserName"
+                    name="username"
+                    placeholder="Username"
                     value={this.state.username}
                     onChange={this.handleChange} >
                 </input>
                 <br />
-
 
                 <input
                     name="password"
