@@ -1,0 +1,9 @@
+.header {
+    /* width: 100%; */
+    /* padding: 15px; */
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

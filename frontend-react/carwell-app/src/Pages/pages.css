@@ -1,0 +1,44 @@
+.column img {
+  width: 50%;
+  min-width: 160px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 6px;
+  margin: 20px;
+}
+
+.columnAbout img {
+  width: 50%;
+  min-width: 280px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid rgb(24, 27, 27);
+  box-shadow: 5px 5px 15px;
+  margin: 20px;
+}
+
+.largeLogo {
+  border: solid black;
+  float: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.column, .columnAbout {
+  text-align: center;
+}
+.avatar img{
+  border-radius: 50%; 
+  box-shadow: 4px 4px 10px;
+  margin: 20px;
+  width: 160px;
+  height: auto;
+  
+}
