@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -16,7 +19,17 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private String username;
+	private String password;
 	private String role = "user";
+
+//Overloaded constructor
+	public User(ObjectId id, String firstName, String lastName, String username, String password) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.username = username;
+		this.password = password;
+	}
 
 //	Getters and Setters
 	public Integer getU_ID() {
@@ -59,4 +72,11 @@ public class User {
 		this.username = username;
 	}
 
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
 }

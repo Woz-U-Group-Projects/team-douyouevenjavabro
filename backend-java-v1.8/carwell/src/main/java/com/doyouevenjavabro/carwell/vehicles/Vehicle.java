@@ -15,22 +15,27 @@ public class Vehicle {
 
 	@Id
 	private ObjectId id;
-	private Integer vehicleId;
+	private String owner;
 	private String make;
 	private String model;
 	private Integer releaseYear;
 	private Integer milesPerDay;
-	private String timeStamp = setTimeStamp();
-	private String regDate;
+	private Integer milesAtRegestration;
+	private String regDate = setTimeStamp();
 
-	public Integer getReleaseYear() {
-		return releaseYear;
-	}
-
-	public void setReleaseYear(Integer releaseYear) {
+//Overloaded constructor	
+	public Vehicle(ObjectId id, String owner, String make, String model, Integer releaseYear, Integer milesPerDay) {
+		this.id = id;
+		this.owner = owner;
+		this.make = make;
+		this.model = model;
 		this.releaseYear = releaseYear;
+		this.milesPerDay = milesPerDay;
+//		this.regDate = regDate; should be commented out
+
 	}
 
+// Getters and Setters
 	public String getId() {
 		return id.toHexString();
 	}
@@ -39,21 +44,12 @@ public class Vehicle {
 		this.id = id;
 	}
 
-	// Getters and Setters
-	public Integer getMilesPerDay() {
-		return milesPerDay;
+	public String getOwner() {
+		return owner;
 	}
 
-	public void setMilesPerDay(Integer milesPerDay) {
-		this.milesPerDay = milesPerDay;
-	}
-
-	public Integer getVehicleId() {
-		return vehicleId;
-	}
-
-	public void setVehicleId(Integer vID) {
-		this.vehicleId = vID;
+	public void setOwner(String owner) {
+		this.owner = owner;
 	}
 
 	public String getMake() {
@@ -72,26 +68,40 @@ public class Vehicle {
 		this.model = model;
 	}
 
-	public Integer getYear() {
+	public Integer getReleaseYear() {
 		return releaseYear;
 	}
 
-	public void setYear(Integer year) {
-		this.releaseYear = year;
+	public void setReleaseYear(Integer releaseYear) {
+		this.releaseYear = releaseYear;
 	}
 
-	public String getTimeStamp() {
-		return timeStamp;
+	public Integer getMilesPerDay() {
+		return milesPerDay;
 	}
 
-	public static String setTimeStamp() {
-		LocalDateTime now = LocalDateTime.now();
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-		String formatDateTime = now.format(formatter);
-		return formatDateTime;
+	public void setMilesPerDay(Integer milesPerDay) {
+		this.milesPerDay = milesPerDay;
 	}
 
 	public String getRegDate() {
 		return regDate;
 	}
+
+//Capture current time/date function
+	public static String setTimeStamp() {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
+		String formatDateTime = now.format(formatter);
+		return formatDateTime;
+	}
+
+	public Integer getMilesAtRegestration() {
+		return milesAtRegestration;
+	}
+
+	public void setMilesAtRegestration(Integer milesAtRegestration) {
+		this.milesAtRegestration = milesAtRegestration;
+	}
+
 }

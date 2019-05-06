@@ -1,0 +1,34 @@
+Vehicle Class properties
+
+ObjectId id;
+String owner;
+String make;
+String model;
+Integer releaseYear;
+Integer milesPerDay;
+Integer milesAtRegestration;
+String regDate = setTimeStamp();
+----------------------------
+Vehicle API's
+"api/vehicles/" - POST - create new vehicles
+"api/vehicles/{id}" - GET - to search for unique id
+"api/vehicles/{id}" - PUT - update vehicle
+"api/vehicles/{id}" - DELETE - delete vehicle 
+"api/vehicles/admin" and "api/vehicles/admin/" - GET - to display all vehicles
+"api/vehicles/owner/{owner}" - GET - to search for all vehicles belonging to owner
+----------------------------------------------------------------------------------------------------------------
+User Class properties
+
+ObjectId id;
+String firstName;
+String lastName;
+String username;
+String password;
+String role = "user";
+
+"api/users/" - POST - create new user
+"api/users/{id}" - GET - to search for unique id
+"api/users/{id}" - PUT - update user
+"api/users/{id}" - DELETE - delete user 
+"api/users/admin" and "api/users/admin/" - GET - to display all user
+"api/users/role/{role}" - GET - to search for all users with the role "...: ( would be user or admin)

@@ -1,14 +1,17 @@
 package com.doyouevenjavabro.carwell;
 
+import java.text.ParseException;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class CarwellApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		SpringApplication.run(CarwellApplication.class, args);
-		System.out.println("It is fun to be a part of DoYouEvenJavaBro group!");
-	}
+		System.out.println("yeah, yeah, im running...");
+		System.out.println("==========================================================================");
 
+	}
 }
