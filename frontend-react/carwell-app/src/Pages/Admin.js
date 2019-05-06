@@ -8,6 +8,7 @@ import AllVehiclesList from "../components/Vehicles/AllVehiclesList";
 import CreateVehicleForm from "../components/Vehicles/CreateVehicleForm";
 import Helmet from 'react-helmet'
 import DeleteVehicle from "../components/Vehicles/DeleteVehicle";
+import UpdateVehicle from "../components/Vehicles/UpdateVehicle";
 
 
 class Test extends Component {
@@ -29,8 +30,8 @@ class Test extends Component {
         <h2>DeleteVehicleForm</h2>
         <DeleteVehicle />
         <hr />
-        <h2>Vehicle</h2>
-        {/* <Vehicle /> */}
+        <h2>Update Vehicle</h2>
+        <UpdateVehicle/>
         <hr />
         <h2>UserProfile</h2>
         {/* <UserProfile /> */}

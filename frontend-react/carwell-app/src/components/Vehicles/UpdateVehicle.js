@@ -11,7 +11,6 @@ export default class UpdateVehicle extends React.Component {
         releaseYear: '',
         milesPerDay: '',
         milesAtRegistration: '',
-        regDate: ''
     };
 
     handleChange = e => {
@@ -32,7 +31,6 @@ export default class UpdateVehicle extends React.Component {
             releaseYear: this.state.releaseYear,
             milesPerDay: this.state.milesPerDay,
             milesAtRegistration: this.state.milesAtRegistration,
-            regDate: this.state.regDate
         };
 
         const UpdateVehicleApi = `http://ec2-35-173-230-63.compute-1.amazonaws.com:8080/api/vehicles/${this.state.id}`;
@@ -106,15 +104,6 @@ export default class UpdateVehicle extends React.Component {
                     name="milesAtRegistration"
                     placeholder="Miles At Registration"
                     value={this.state.milesAtRegistration}
-                    onChange={this.handleChange}>
-                </input>
-                <br />
-
-                <input
-                    type="number"
-                    name="regDate"
-                    placeholder="Registration Date"
-                    value={this.state.regDate}
                     onChange={this.handleChange}>
                 </input>
                 <br />
