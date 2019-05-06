@@ -43,6 +43,9 @@ class Vehicles extends React.Component {
       }
     }))(TableCell);
 
+  deleteVehicle() {
+    
+  }
     // ObjectId id;
     // String owner;
     // String make;
@@ -73,11 +76,12 @@ class Vehicles extends React.Component {
               <CustomTableCell>{vehicle.id}</CustomTableCell>
               <CustomTableCell>{vehicle.owner}</CustomTableCell>
               <CustomTableCell>{vehicle.make}</CustomTableCell>
-                <CustomTableCell>{vehicle.model}</CustomTableCell>
-                <CustomTableCell>{vehicle.releaseYear}</CustomTableCell>
-                <CustomTableCell>{vehicle.milesPerDay}</CustomTableCell>
-                <CustomTableCell>{vehicle.milesAtRegestration}</CustomTableCell>
-                <CustomTableCell>{vehicle.regDate}</CustomTableCell>
+              <CustomTableCell>{vehicle.model}</CustomTableCell>
+              <CustomTableCell>{vehicle.releaseYear}</CustomTableCell>
+              <CustomTableCell>{vehicle.milesPerDay}</CustomTableCell>
+              <CustomTableCell>{vehicle.milesAtRegestration}</CustomTableCell>
+              <CustomTableCell>{vehicle.regDate}</CustomTableCell>
+              <button onClick={deleteVehicle}>X</button>
               </TableRow>
             ))}
           </TableBody>

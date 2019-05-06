@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Vehicles from "../vehicle-components/Vehicles";
-import CreateVehicleForm from "../vehicle-components/CreateVehicleForm";
+import CreateVehicle from "../vehicle-components/CreateVehicle";
 import Vehicle from "../vehicle-components/Vehicle";
 import User from "../user-components/User";
 import UserProfile from "../user-components/UserProfile";
 import Users from "../user-components/Users";
 import CreateUser from "../user-components/CreateUser";
+import DeleteVehicle from "../vehicle-components/DeleteVehicle";
 
 
 class Test extends Component {
@@ -17,7 +18,10 @@ class Test extends Component {
         <Vehicles />
         <hr />
         <h2>CreateVehicleForm</h2>
-        <CreateVehicleForm />
+        <CreateVehicle />
+        <hr />
+        <h2>DeleteVehicleForm</h2>
+        <DeleteVehicle />
         <hr />
         <h2>Vehicle</h2>
         <Vehicle />
