@@ -18,7 +18,7 @@ export default class UpdateUser extends React.Component {
     };
 
     handleSubmit = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         console.log("Request to udate user with: ", this.state);
         const user = {
             id: this.state.id,

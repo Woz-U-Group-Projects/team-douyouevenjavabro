@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import AllUsersList from '../components/Users/AllUsersList';
-import CreateUser from '../components/Users/CreateUser';
-import DeleteUser from "../components/Users/DeleteUser";
-import UpdateUser from "../components/Users/UpdateUser";
-import AllVehiclesList from "../components/Vehicles/AllVehiclesList";
+// import AllUsersList from '../components/Users/AllUsersList';
+// import CreateUser from '../components/Users/CreateUser';
+// import DeleteUser from "../components/Users/DeleteUser";
+// import UpdateUser from "../components/Users/UpdateUser";
+// import AllVehiclesList from "../components/Vehicles/AllVehiclesList";
+import UpdateVehicle from '../components/Vehicles/UpdateVehicle';
 
 
 class Dashboard extends Component {
@@ -13,11 +14,11 @@ class Dashboard extends Component {
         <hr />
         {/* <h2>Vehicles Table</h2>
         <Vehicles /> */}
-        <h2>Vehicles List</h2>
+        {/* <h2>Vehicles List</h2>
         <AllVehiclesList />
-        <hr />
-        <h2>CreateVehicleForm</h2>
-        {/* <CreateVehicleForm /> */}
+        <hr /> */}
+        <h2>Update Vehicle</h2>
+        <UpdateVehicle/>
         <hr />
         <h2>Vehicle</h2>
         {/* <Vehicle /> */}
@@ -32,14 +33,14 @@ class Dashboard extends Component {
         <AllUsersTable />
         <br /> */}
         <h2>All Users List</h2>
-        <AllUsersList />
+        {/* <AllUsersList /> */}
         <hr />
         <h2>Create User </h2>
-        <CreateUser />
+        {/* <CreateUser /> */}
         <h2>Update User </h2>
-        <UpdateUser />
+        {/* <UpdateUser /> */}
         <h2>Delete User </h2>
-        <DeleteUser />
+        {/* <DeleteUser /> */}
         <hr />
 
       </div>

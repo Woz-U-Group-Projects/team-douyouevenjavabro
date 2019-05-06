@@ -14,6 +14,7 @@ import Profile from '../Pages/Profile'
 
 import AllUsersList from '../components/Users/AllUsersList';
 import UpdateUser from '../components/Users/ManageUser';
+import Dashboard from '../Pages/Dashboard';
 
 library.add(faStroopwafel)
 
@@ -29,6 +30,7 @@ class App extends Component {
                     <Route exact path="/about" component={About} />
                     <Route exact path="/register" component={Register} />
                     <Route exact path="/login" component={Login} />
+                    <Route exact path="/dashboard" component={Dashboard} />
                     <Route exact path="/admin" component={Admin} />
                     <Route exact path="/profile" component={AllUsersList} />
                     <Route exact path="/profile/:id" component={Profile} />
