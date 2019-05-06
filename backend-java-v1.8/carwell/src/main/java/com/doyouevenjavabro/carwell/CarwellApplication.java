@@ -10,7 +10,7 @@ public class CarwellApplication {
 
 	public static void main(String[] args) throws ParseException {
 		SpringApplication.run(CarwellApplication.class, args);
-		System.out.println("yeah, yeah, im running...");
+		System.out.println("Skadoosh! we are live...");
 		System.out.println("==========================================================================");
 
 	}

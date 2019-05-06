@@ -20,17 +20,18 @@ public class Vehicle {
 	private String model;
 	private Integer releaseYear;
 	private Integer milesPerDay;
-	private Integer milesAtRegestration;
+	private Integer milesAtRegistration;
 	private String regDate = setTimeStamp();
 
 //Overloaded constructor	
-	public Vehicle(ObjectId id, String owner, String make, String model, Integer releaseYear, Integer milesPerDay) {
+	public Vehicle(ObjectId id, String owner, String make, String model, Integer releaseYear, Integer milesPerDay, Integer milesAtRegistration, String regDate) {
 		this.id = id;
 		this.owner = owner;
 		this.make = make;
 		this.model = model;
 		this.releaseYear = releaseYear;
 		this.milesPerDay = milesPerDay;
+		this.milesAtRegistration= milesAtRegistration;
 //		this.regDate = regDate; should be commented out
 
 	}
@@ -96,12 +97,13 @@ public class Vehicle {
 		return formatDateTime;
 	}
 
-	public Integer getMilesAtRegestration() {
-		return milesAtRegestration;
+
+	public Integer getMilesAtRegistration() {
+		return milesAtRegistration;
 	}
 
-	public void setMilesAtRegestration(Integer milesAtRegestration) {
-		this.milesAtRegestration = milesAtRegestration;
+	public void setMilesAtRegistration(Integer milesAtRegistration) {
+		this.milesAtRegistration = milesAtRegistration;
 	}
 
 }

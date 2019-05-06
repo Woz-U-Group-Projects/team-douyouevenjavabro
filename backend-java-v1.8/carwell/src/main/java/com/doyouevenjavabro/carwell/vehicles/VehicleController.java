@@ -70,14 +70,22 @@ public class VehicleController {
 
 		if (vehicle.getOwner() != null)
 			updatedVehicle.setOwner(vehicle.getOwner());
-		if (vehicle.getReleaseYear() != null)
-			updatedVehicle.setReleaseYear(vehicle.getReleaseYear());
+		
+		if (vehicle.getMake() != null)
+			updatedVehicle.setMake(vehicle.getMake());
+		
 		if (vehicle.getModel() != null)
 			updatedVehicle.setModel(vehicle.getModel());
+		
+		if (vehicle.getReleaseYear() != null)
+			updatedVehicle.setReleaseYear(vehicle.getReleaseYear());
+		
 		if (vehicle.getMilesPerDay() != null)
 			updatedVehicle.setMilesPerDay(vehicle.getMilesPerDay());
-		if (vehicle.getOwner() != null)
-			updatedVehicle.setOwner(vehicle.getOwner());
+		
+		if (vehicle.getMilesAtRegistration() != null)
+			updatedVehicle.setMilesAtRegistration(vehicle.getMilesAtRegistration());
+		
 		vehicleDB.save(updatedVehicle);
 		System.out.println("Updated vehicle");
 		return updatedVehicle;
